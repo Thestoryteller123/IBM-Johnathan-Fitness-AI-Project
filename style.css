@@ -1,8 +1,8 @@
-        /* === CSS Styling === */
+      /* === CSS Styling === */
         
         /* Base page setup */
         body {
-            background-color: #8c8c8c; /* Matches the grey background */
+            background-color: #fec165; /* Matches the grey background */
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             display: flex;
@@ -23,19 +23,23 @@
 
         /* Top Title Box */
         .title-box {
-            background-color: #6b6b6b;
-            padding: 40px 20px;
+            background-color:transparent;
+            padding: 10px 20px;
             border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(252, 255, 85, 0.1);
+            
         }
 
         .title-box h1 {
-            color: #ffffff;
+            color: #410d0d;
             margin: 0;
-            font-size: 28px;
+            font-size: 50px;
             font-weight: 500;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            font-size: 70px;
+font-family: 'Times New Roman', Times, serif
+;            font-weight: bolder;
         }
 
         /* Common Questions Row */
@@ -47,7 +51,7 @@
         }
 
         .pill-btn {
-            background-color: #7a7a7a;
+            background-color: #6F4E37;
             color: #ffffff;
             border: none;
             padding: 10px 15px;
@@ -65,56 +69,50 @@
 
         /* Input Area */
         .input-section {
+            background-color: #cb4d4d;
+            border-radius: 20px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction:row;
+            align-items:normal;
             gap: 15px;
             width: 100%;
         }
 
         #question-input {
-            width: 100%;
-            background-color: #000000;
+            width: 80%;
+            background-color: #cb4d4d;
             color: #ffffff;
             border: none;
-            border-radius: 20px;
+            border-radius: 30px;
             padding: 20px;
             font-size: 18px;
-            text-align: center;
-            box-sizing: border-box;
+            text-align: Left;
+            box-sizing:content-box;
             resize: none; /* Prevents manual resizing */
             height: 80px;
+             align-self: flex-end,left;
         }
 
         #question-input::placeholder {
-            color: #ffffff;
-            opacity: 1;
+            color: #382416;
+            text-shadow: #000000;
+            border-style: inherit;
+            border-color: #000000;
+            opacity: ;
         }
 
         #question-input:focus {
-            outline: 2px solid #ffffff;
+            outline: 1px solid #cb4d4d;
         }
 
-        /* Submit Button */
-        .submit-btn {
-            background-color: #6b6b6b;
-            color: #ffffff;
-            border: none;
-            border-radius: 12px;
-            padding: 15px 20px;
-            font-size: 20px;
-            cursor: pointer;
-            width: 70%;
-            transition: opacity 0.2s;
-        }
-
+    
         .submit-btn:active {
             opacity: 0.8;
         }
 
         /* AI Response Area */
         .response-box {
-            background-color: #000000;
+            background-color:#cb4d4d;
             color: #ffffff;
             border-radius: 12px;
             padding: 40px 20px;
@@ -122,8 +120,38 @@
             font-size: 20px;
             flex-grow: 1; /* Takes up remaining vertical space */
             display: flex;
-            justify-content: center;
+            justify-content:left;
             align-items: center;
             min-height: 200px;
             line-height: 1.5;
+            border-color: #000000;
+            border-style:inset;
+            flex-direction: column;
+            max-height: 400px;
+            overflow-y: scroll;
+        }
+        .human-stats{
+            background-color: #8c8c8c;
+            color:#555555;
+            border-radius: 10px;
+            padding: 20px 10px;
+            justify-self: center;
+            display:  flex;
+            border-color: #555555;
+        }
+        .submit{
+            background-color:#cb4d4d;
+            color: #ffffff;
+            border:#410d0d;
+            border-radius: 100px;
+            background-image: url(Untitled-1.png);
+            background-position: center;
+            background-size: 85%;
+            padding: 15px 15px;
+            font-size: 10px;
+            cursor: pointer;
+            width: 10%;
+            transition: opacity 0.2s;
+            align-self: flex-end;
+            margin: 10px;
         }

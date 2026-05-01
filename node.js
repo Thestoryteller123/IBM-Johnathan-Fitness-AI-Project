@@ -8,32 +8,40 @@ app.use(express.json());
 
 app.post("/api/chat", async (req, res) => {
     try {
-        const response = await fetch("https://api.openai.com/v1/chat/completions", {
+        const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
             method: "POST",
             headers: {
+                "Authorization": "Bearer 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",
                 "Content-Type": "application/json",
-                "Authorization": "Bearer YOUR_OPENAI_API_KEY"
+                "HTTP-Referer": "http://localhost",
+                "X-Title": "FitnessAI"
             },
             body: JSON.stringify({
-                model: "gpt-4o-mini",
-                messages: [
-                    {
-                        role: "system",
-                        content: "You are a helpful fitness AI."
-                    },
-                    {
-                        role: "user",
-                        content: req.body.message
-                    }
-                ]
-            })
+    model: "openai/gpt-3.5-turbo",
+    messages: [
+        { role: "system", content: "You are a helpful fitness AI." },
+        { role: "user", content: req.body.message }
+    ]
+})
         });
 
         const data = await response.json();
 
-        res.json({
-            reply: data.choices?.[0]?.message?.content || "No response"
-        });
+        console.log("OPENROUTER RESPONSE:", data);
+
+        // Handle API errors
+        if (data.error) {
+            return res.json({
+                reply: "Error: " + data.error.message
+            });
+        }
+
+        const reply =
+            data.choices?.[0]?.message?.content ||
+            data.choices?.[0]?.text ||
+            "No response";
+
+        res.json({ reply });
 
     } catch (err) {
         res.status(500).json({ error: err.message });

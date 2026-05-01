@@ -13,7 +13,7 @@
 //     // Add the script to the page's head section so it loads
 //     document.head.appendChild(script);
 // }, 0);
-
+console.log("JS LOADED");
 // This waits for the webpage to fully load before setting up the interactive parts.
 // It's like waiting for all the furniture to be in place before arranging the room.
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,0 +1,27 @@
+{
+  "name": "fitnessai",
+  "version": "1.0.0",
+  "description": "An AI that will allowed users to understand and receive the best fitness information in an easy way.",
+  "main": "functionality.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thestoryteller123/IBM-Johnathan-Fitness-AI-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Thestoryteller123/IBM-Johnathan-Fitness-AI-Project/issues"
+  },
+  "homepage": "https://github.com/Thestoryteller123/IBM-Johnathan-Fitness-AI-Project#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2"
+  }
+
+}

@@ -78,7 +78,7 @@ font-family: 'Times New Roman', Times, serif
             width: 100%;
         }
 
-        #question-input {
+        #question-input { 
             width: 80%;
             background-color: #cb4d4d;
             color: #ffffff;
@@ -155,3 +155,6 @@ font-family: 'Times New Roman', Times, serif
             align-self: flex-end;
             margin: 10px;
         }
+
+
+

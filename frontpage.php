@@ -8,7 +8,7 @@
 
 
         <div class = "form-box active" id = "login-form">
-            <form action = "">
+            <form action = "login_register.php" method = "post">
                 <h2> Login</h2>
                 <div><input type = "email" name="email" placeholder="Email" required> </div> <!-- Type = "email" works the same as type = "text" apparently -->
                 <div><input type="password" name="password" placeholder="Password" required></div> <!--Same for password-->
@@ -20,7 +20,7 @@
 
         <!-- Make New Account Stuff -->
         <div class = "form-box" id = "register-form">
-            <form action = "">
+            <form action = "login_register.php" method = "post">
                 <h2> Register</h2>
                 <div><input type = "email" name="email" placeholder="Email" required> </div> <!-- Type = "email" works the same as type = "text" apparently -->
                 <div><input type="password" name="password" placeholder="Password" required></div> <!--Same for password-->

@@ -77,4 +77,27 @@ headers: {
         responseBox.innerHTML = "Error: " + error.message;
     }
 });
+
+// STARS BUTTON
+const stars = document.querySelectorAll('.stars');
+
+stars.forEach(star =>{
+ star.addEventListener('click', () => {
+    if (star.src === "http://127.0.0.1:5500/star_yellow.png"){ //FIX IP showing?
+    const index = parseInt(star.id,10);
+    for (let i = 5; i > index; i--){
+        const changeStar = document.getElementById(String(i));
+        changeStar.src = "star.png";
+    }
+    } else {
+    const index = parseInt(star.id,10);
+    for (let i = 1; i <= index; i++){
+        const changeStar = document.getElementById(String(i));
+        changeStar.src = "star_yellow.png";
+    }
+}
 });
+});
+});
+
+

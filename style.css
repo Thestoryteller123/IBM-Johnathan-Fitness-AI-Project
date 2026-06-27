@@ -98,7 +98,7 @@ font-family: 'Times New Roman', Times, serif
             text-shadow: #000000;
             border-style: inherit;
             border-color: #000000;
-            opacity: ;
+            opacity: 100;
         }
 
         #question-input:focus {
@@ -154,4 +154,8 @@ font-family: 'Times New Roman', Times, serif
             transition: opacity 0.2s;
             align-self: flex-end;
             margin: 10px;
+        }
+        .stars {
+            width: 13%;
+            margin-left: 5%;
         }
